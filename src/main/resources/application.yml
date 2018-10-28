@@ -1,11 +1,15 @@
-server.port=8080
-server.context-path=/
 
-phoenix.enable= true
-phoenix.url=jdbc:phoenix:192.168.2.114:2181;schema=OA
-phoenix.type=com.alibaba.druid.pool.DruidDataSource
-phoenix.driver-class-name=org.apache.phoenix.jdbc.PhoenixDriver
-phoenix.username=
-phoenix.password=
-phoenix.default-auto-commit=true
-phoenix.schema.isNamespaceMappingEnabled=true
+server: 
+    port: 8080
+    context-path: /
+
+phoenix: 
+  enable: true
+  url: jdbc:phoenix:192.168.2.114:2181;schema=OA
+  type: com.alibaba.druid.pool.DruidDataSource
+  driver-class-name: org.apache.phoenix.jdbc.PhoenixDriver
+  username: 
+  password: 
+  default-auto-commit: true
+  schema: 
+    isNamespaceMappingEnabled: true
